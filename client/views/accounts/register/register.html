@@ -1,0 +1,34 @@
+<template name="accountRegister">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			{{#if logo}}
+				<div class="mealsToGo-logo">
+					<a href="/"><img src="{{logo}}" alt="logo"></a>
+				</div>
+			{{/if}}
+			{{>rolesError}}
+			<form id="register" role="form">
+				<legend>{{t9n "signUp"}}</legend>
+			
+				<div class="form-group">
+					<label for="username">{{t9n "username"}}</label>
+					<input name="username" type="text" class="form-control" id="username" placeholder="{{t9n "username"}}">
+				</div>
+				
+				<div class="form-group">
+					<label for="email">{{t9n "email"}}</label>
+					<input name="email" type="email" class="form-control" id="email" placeholder="{{t9n "email"}}" value="{{emailAddress}}">
+				</div>
+
+				<div class="form-group">
+					<label for="password">{{t9n "password"}}</label>
+					<input name="password" type="password" class="form-control" id="password" placeholder="{{t9n "password"}}">
+				</div>
+
+				<button type="submit" class="btn btn-default">{{t9n "signUp"}}</button>
+				<a href="{{pathFor 'login'}}" class="btn btn-default">{{t9n "signIn"}}</a>
+			</form>
+
+		</div>
+	</div>
+</template>
