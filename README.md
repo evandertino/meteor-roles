@@ -26,4 +26,5 @@ This is a test project on meteor roles to help debug issue [#37](https://github.
 
 
 **Functionality**
-	To be tested on registration
+
+To be tested on registration
