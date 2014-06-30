@@ -22,4 +22,4 @@ meteor remove autopublish
 meteor
 ~~~
 
-This is a test project on meteor roles to debug issue (#37)[https://github.com/alanning/meteor-roles/issues/37]
+This is a test project on meteor roles to debug issue [#37](https://github.com/alanning/meteor-roles/issues/37)
