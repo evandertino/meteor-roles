@@ -23,3 +23,7 @@ meteor
 ~~~
 
 This is a test project on meteor roles to help debug issue [#37](https://github.com/alanning/meteor-roles/issues/37)
+
+
+**Functionality**
+To be tested on registration
