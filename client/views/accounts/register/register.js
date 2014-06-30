@@ -1,6 +1,6 @@
 Template.accountRegister.helpers = {
 	logo: function() {
-		return MealsToGo.settings.logo;
+		return RolesApp.settings.logo;
 	},
 	emailAddress: function() {
 		return Session.get('email');
@@ -44,6 +44,7 @@ Template.accountRegister.events({
 			}
 			return false;
 		})(password);
+		
 		if (passwordErrors)
 			return;
 
@@ -51,7 +52,7 @@ Template.accountRegister.events({
 			Session.set('rolesError', t9n("error.usernameRequired"));
 			return;
 		}
-		if (username && MealsToGo.isStringEmail(username)) {
+		if (username && RolesApp.isStringEmail(username)) {
 			Session.set('rolesError', t9n("error.usernameIsEmail"));
 			return;
 		}
@@ -93,7 +94,7 @@ Template.accountRegister.events({
 					Router.go(Session.get('fromWhere'));
 					return Session.set('fromWhere', void 0);
 				} else {
-					return Router.go(MealsToGo.settings.dashboardRoute);
+					return Router.go(RolesApp.settings.dashboardRoute);
 				}
 			});
 		});

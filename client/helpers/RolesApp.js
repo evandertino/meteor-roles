@@ -1,4 +1,4 @@
-MealsToGo = {
+RolesApp = {
 	settings: {
 		logo: 'http://lorempixel.com/output/animals-q-c-640-480-1.jpg',
 		wrapLinks: true,
@@ -50,7 +50,7 @@ MealsToGo = {
 	}
 };
 
-this.MealsToGo = MealsToGo;
+this.RolesApp = RolesApp;
 
 this.T9NHelper = (function() {
 	function T9NHelper() {}
@@ -60,7 +60,7 @@ this.T9NHelper = (function() {
 	}
 
 	T9NHelper.accountsError = function(err) {
-		return Session.set('rolesError', MealsToGo.trimTranslation(this.translate(err.reason)));
+		return Session.set('rolesError', RolesApp.trimTranslation(this.translate(err.reason)));
 	}
 
 	return T9NHelper;
